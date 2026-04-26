@@ -1,8 +1,8 @@
 [
-  { "imagen": "imagenes/defectos1.jpg", "descripcion": "" },
-  { "imagen": "imagenes/defectos2.jpg", "descripcion": "" },
-  { "imagen": "imagenes/defectos3.jpg", "descripcion": "" },
-  { "imagen": "imagenes/defectos4.jpg", "descripcion": "" },
+  { "imagen": "imagenes/defectos1.jpg", "descripcion": "Pruebaaaaaaaa" },
+  { "imagen": "imagenes/defectos2.jpg", "descripcion": "Pruebaaaaaaaa" },
+  { "imagen": "imagenes/defectos3.jpg", "descripcion": "Pruebaaaaaaaa" },
+  { "imagen": "imagenes/defectos4.jpg", "descripcion": "Pruebaaaaaaaa" },
   { "imagen": "imagenes/defectos5.jpg", "descripcion": "" },
   { "imagen": "imagenes/defectos6.jpg", "descripcion": "" },
   { "imagen": "imagenes/defectos7.jpg", "descripcion": "" },
