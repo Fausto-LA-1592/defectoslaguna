@@ -1,9 +1,5 @@
 // agregá las rutas de tus imágenes acá
-const imagenes = [
-  "imagenes/foto1.jpg",
-  "imagenes/foto2.jpg",
-  "imagenes/foto3.jpg",
-];
+const imagenes = Array.from({length: 57}, (_, i) => `imagenes/defectos${i + 1}.jpg`);
 
 let num = 0;
 const img = document.getElementById("imagen");
