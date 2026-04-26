@@ -6,8 +6,7 @@
 
 body {
   background: #0f0f0f;
-  min-height: 100vh;
-  height: 100vh;
+  height: 100dvh;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -17,7 +16,7 @@ body {
 
 .viewer {
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
 }
@@ -29,6 +28,7 @@ body {
   justify-content: center;
   align-items: center;
   background: #0f0f0f;
+  min-height: 0;
 }
 
 .imagen-wrap img {
