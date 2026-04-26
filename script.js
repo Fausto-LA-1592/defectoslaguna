@@ -1,27 +1,33 @@
-// agregá las rutas de tus imágenes acá
-const imagenes = Array.from({length: 57}, (_, i) => `imagenes/defectos${i + 1}.jpg`);
-
+let datos = [];
 let num = 0;
+
 const img = document.getElementById("imagen");
 const slideIndicator = document.getElementById("slide");
+const descripcionEl = document.getElementById("descripcion");
 
-function mostrarImagen() {
-  img.src = imagenes[num];
-  slideIndicator.innerText = `${num + 1} / ${imagenes.length}`;
+fetch("descripciones.json")
+  .then(res => res.json())
+  .then(json => {
+    datos = json;
+    mostrar();
+  });
+
+function mostrar() {
+  img.src = datos[num].imagen;
+  slideIndicator.innerText = `${num + 1} / ${datos.length}`;
+  descripcionEl.innerText = datos[num].descripcion || "";
 }
 
 document.getElementById("adelante").onclick = () => {
-  if (num < imagenes.length - 1) {
+  if (num < datos.length - 1) {
     num++;
-    mostrarImagen();
+    mostrar();
   }
 };
 
 document.getElementById("atras").onclick = () => {
   if (num > 0) {
     num--;
-    mostrarImagen();
+    mostrar();
   }
 };
-
-mostrarImagen();
